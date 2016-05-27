@@ -1,0 +1,3 @@
+{ "accessKeyId": "AKIAIR32TXP76MNGFLKA", "secretAccessKey": "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", "region": "Oregon",
+"s3BucketEndpoint": true,
+  "endpoint": "http://shenkar-shlomi-imageapi.s3.amazonaws.com" }
