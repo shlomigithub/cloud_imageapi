@@ -107,12 +107,13 @@ ul li p{
 		<div class="bar">
 			<!-- Create a binding between the searchString model and the text field -->
 			<input type="text" ng-model="imgFilter.name" placeholder="Enter your search terms" />
+			<input type="text" ng-model="imgFilter.color" placeholder="Search by color" />
 		</div>
 		<!-- image list -->
 		<ul>
 			<li ng-repeat="i in imageList | filter:imgFilter" >
 				<a href="#">
-					<img ng-src="https://s3-us-west-2.amazonaws.com/shenkar-shlomi-imageapi/images/{{i._id}}?clearcash=" 
+					<img ng-src="https://s3-us-west-2.amazonaws.com/shenkar-shlomi-imageapi/images/{{i._id}}?clearcash={{getTime()}}" 
 				/></a>
 				<p>{{i.name}}</p>
 				
